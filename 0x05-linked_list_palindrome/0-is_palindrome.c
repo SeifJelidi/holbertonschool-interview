@@ -24,7 +24,7 @@ newList = newList->next;
 }
 n--;
 m = n / 2;
-while (i < m)
+while (i <= m)
 {
 if (tab[i] != tab[n])
 return (0);
