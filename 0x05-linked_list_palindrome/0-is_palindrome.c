@@ -7,7 +7,8 @@
  */
 int is_palindrome(listint_t **head)
 {
-int i, n =0;
+int i, n = 0;
+int m;
 listint_t *newList;
 int tab[1900];
 
@@ -24,17 +25,13 @@ n = n + 1;
 newList = newList->next;
 }
 n--;
-while (i < n / 2)
+m = n / 2;
+while (i < m)
 {
 if (tab[i] != tab[n])
-{
 return (0);
-}
-else
-{
 i++;
 n--;
-}
 }
 return (1);
 }
