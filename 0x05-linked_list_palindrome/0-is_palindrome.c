@@ -7,7 +7,7 @@
  */
 int is_palindrome(listint_t **head)
 {
-int i, n;
+int i, n =0;
 listint_t *newList;
 int tab[1900];
 
