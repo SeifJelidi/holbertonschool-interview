@@ -25,8 +25,8 @@ while (i <= m)
 {
 if (tab[i] != tab[n])
 return (0);
-i++;
-n--;
+++i;
+--n;
 }
 return (1);
 }
