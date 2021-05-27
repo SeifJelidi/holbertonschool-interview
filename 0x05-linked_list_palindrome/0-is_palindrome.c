@@ -8,19 +8,17 @@ int is_palindrome(listint_t **head)
 {
 int i, n = 0;
 int m;
-listint_t *newList;
 int tab[1900];
 
 if (*head == NULL)
 return (1);
 
-newList = (listint_t *)malloc(sizeof(listint_t));
 
-while (newList)
+while (*head)
 {
-tab[n] = newList->n;
+tab[n] = (*head)->n;
 n = n + 1;
-newList = newList->next;
+*head = (*head)->next;
 }
 n--;
 m = n / 2;
