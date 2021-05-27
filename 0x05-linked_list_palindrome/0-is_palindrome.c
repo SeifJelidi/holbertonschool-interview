@@ -11,7 +11,7 @@ int i, n, c = 0, m;
 listint_t *start, *end;
 
 if (head == NULL)
-return (0);
+return (1);
 
 start = (listint_t *)malloc(sizeof(listint_t));
 end = (listint_t *)malloc(sizeof(listint_t));
