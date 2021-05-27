@@ -1,7 +1,6 @@
 #include "lists.h"
 /**
  * is_palindrome - checks if a linked list is palindrome
- *
  * @head: Head node
  * Return: 0 or 1
  */
@@ -26,7 +25,7 @@ newList = newList->next;
 }
 n--;
 m = n / 2;
-while (i <= m)
+while (i > m)
 {
 if (tab[i] != tab[n])
 return (0);
