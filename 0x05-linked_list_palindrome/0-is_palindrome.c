@@ -19,11 +19,11 @@ tab[n] = (*head)->n;
 *head = (*head)->next;
 n = n + 1;
 }
-n--;
+--n;
 m = n / 2;
 while (i <= m)
 {
-if (tab[i] != tab[n - 1])
+if (tab[i] != tab[n])
 return (0);
 i++;
 n--;
