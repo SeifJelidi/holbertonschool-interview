@@ -23,7 +23,7 @@ n--;
 m = n / 2;
 while (i <= m)
 {
-if (tab[i] != tab[n])
+if (tab[i] != tab[n - 1])
 return (0);
 i++;
 n--;
