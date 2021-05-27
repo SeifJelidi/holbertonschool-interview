@@ -13,12 +13,11 @@ int tab[1900];
 if (*head == NULL)
 return (1);
 
-
 while (*head)
 {
 tab[n] = (*head)->n;
-n = n + 1;
 *head = (*head)->next;
+n = n + 1;
 }
 n--;
 m = n / 2;
