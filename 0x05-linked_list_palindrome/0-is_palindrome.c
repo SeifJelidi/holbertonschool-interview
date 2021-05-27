@@ -7,40 +7,34 @@
  */
 int is_palindrome(listint_t **head)
 {
-int i, n, c = 0, m;
-listint_t *start, *end;
+int i, n;
+listint_t *newList;
+int tab[1900];
 
-if (head == NULL)
+if (*head == NULL)
 return (1);
 
-start = (listint_t *)malloc(sizeof(listint_t));
-end = (listint_t *)malloc(sizeof(listint_t));
-start = *head;
-end = *head;
+newList = (listint_t *)malloc(sizeof(listint_t));
+newList = *head;
 
-while (end->next)
+while (newList)
 {
+tab[n] = newList->n;
 n = n + 1;
-end = end->next;
+newList = newList->next;
 }
-m = n;
+n--;
 while (i < n / 2)
 {
-if (end->n != start->n)
+if (tab[i] != tab[n])
+{
 return (0);
+}
 else
 {
-start = start->next;
-end = *head;
-m = m - 1;
-while (c < m)
-{
-c = c + 1;
-end = end->next;
-}
-c = 0;
-}
 i++;
+n--;
+}
 }
 return (1);
 }
