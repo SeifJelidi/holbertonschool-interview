@@ -19,7 +19,6 @@ tab[n] = (*head)->n;
 *head = (*head)->next;
 n = n + 1;
 }
---n;
 m = n / 2;
 while (i <= m)
 {
