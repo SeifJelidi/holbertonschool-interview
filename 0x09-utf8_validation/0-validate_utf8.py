@@ -2,9 +2,10 @@
 """UTF 8 validaion"""
 import codecs
 
+
 def validUTF8(data):
     try:
-       bytes(data).decode("UTF-8", errors="strict")
-       return True
+        bytes(data).decode("UTF-8", errors="strict")
+        return True
     except Exception:
         return False
