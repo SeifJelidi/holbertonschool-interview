@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """UTF 8 validaion"""
-import codecs
-import binascii
+
 
 
 def validUTF8(data):
