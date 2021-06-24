@@ -1,11 +1,14 @@
 #!/usr/bin/python3
 """UTF 8 validaion"""
 import codecs
+import binascii
 
 
 def validUTF8(data):
     try:
-        bytes([x & 256 for x in data]).decode(encoding="UTF-8", errors="strict")
-        return True
+        for i in range(0, 256):
+            for i in data:
+                bytes(data).decode(encoding="UTF-8", errors="strict")
+                return True
     except Exception:
         return False
