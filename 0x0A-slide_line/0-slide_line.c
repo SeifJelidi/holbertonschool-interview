@@ -103,7 +103,7 @@ int slide_line(int *line, size_t size, int direction)
 				}
 			}
 		}
-	} else
+	} else if (direction == SLIDE_RIGHT)
 	{
 		for (i = size - 1; i > 0; i--)
 		{
@@ -113,6 +113,9 @@ int slide_line(int *line, size_t size, int direction)
 				line[i - 1] = 0;
 			}
 		}
+	} else
+	{
+		return (0);
 	}
 	nmax = swap_zeros(line, size, direction);
 	return (1);
