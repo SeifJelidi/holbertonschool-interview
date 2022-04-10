@@ -1,7 +1,7 @@
 #include "sort.h"
 
 /**
- * swaping - swap numbers
+ * swap - swap numbers
  * @a: array 1
  * @b: array 2
  * Return: nothing
@@ -16,11 +16,10 @@ void swap(int *a, int *b)
 }
 
 /**
- * heapify - entry to heap
- * Desc: heapify function that makes array into a heap
+ * maxi - the maximum number of the layers
  * @array: pointer to an int array
  * @size: size of the array
- * @i: max point
+ * @i: int i max
  * @length: array length
  * Return: void function, nothing is returned
  */
