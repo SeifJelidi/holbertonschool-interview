@@ -32,6 +32,7 @@ int s_f(int *arr, size_t s, size_t e,  int v)
 		return (-1);
 
 	mid = (e + s) / 2;
+	printf("Searching in array: ");
 	print_array(arr, s, e);
 	if (arr[mid] == v && arr[mid - 1] != v)
 	{
