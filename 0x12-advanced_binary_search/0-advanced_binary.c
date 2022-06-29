@@ -3,8 +3,8 @@
 /**
  * print_array - Prints an array
  * @array: pointer at the first element of array
- * @1_h: first half of array
- * @2_h: second half of array
+ * @f_h: first half of array
+ * @s_h: second half of array
  */
 void print_array(int *array, int f_h, int s_h)
 {
